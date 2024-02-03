@@ -1,0 +1,197 @@
+@keyframes spin-anim {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg)
+    }
+}
+@keyframes fade-in {
+    from {
+        opacity: 0.0;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+body{
+    background-color:#2a2e2b;
+    font-family: 'Alegreya Sans';
+    color:white;
+    font-size:16pt;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    animation:fade-in 2s forwards;
+}
+a {
+    color:Cyan;
+    text-decoration:none;
+}
+iframe.more {
+    height:700px;
+    width:400px;
+}
+div.cheatsheet-div > li{
+    font-style:italic;
+}
+th {
+    text-align:center;
+}
+.caption{
+    font-size:10px;
+    font-style:Italic;
+}
+.header{
+    font-size:18pt;
+    text-transform: uppercase;
+    background-color:#524b96;
+    padding:5px 15px 5px 15px;
+    position:relative;
+    right:30px;
+} 
+.header:hover {
+    filter: brightness(1.2);
+}
+.header:active {
+    filter:brightness(0.8);
+}
+.banner {
+    background-color:#524b96;
+    margin:0px;
+    padding:10px;
+    border-bottom: 5px solid #323438;
+}
+img.home{
+    width:500px;
+    height:288px;
+    transform:rotate(0deg);
+    /*transition:transform 2s;*/
+}
+img.icon {
+    width:60px;
+    height:46px;
+    text-align:left;
+    position:relative;
+    right:200px;
+}
+.home:hover{
+    /*transform:rotate(360deg);*/
+    animation: spin-anim 2s forwards;
+}
+a:hover {
+    text-decoration:underline;
+}
+a.blank_link{
+    color:white;
+    text-decoration:none;
+}
+.list{
+    color:cyan;
+    text-align:left;
+    list-style-position:inside;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.border{
+    border-collapse:separate;
+    border-spacing:0;
+    border-radius:15px;
+    border:solid #665fc2 4px;
+}
+.cheatsheet-header{
+    text-align:left;
+    margin:25px;
+}
+.cheatsheet-div{
+    margin:25px 25px 25px 35px;
+    padding:10px;
+}
+.cheatsheet{
+    width:800px;
+    height:70px;
+    transition:width 1s, height 1s;
+    margin:10px;
+}
+.cheatsheet:hover {
+    width:800px;
+    height:500px;
+}
+#title{
+    margin:40px;
+    font-size:45px;
+    font-weight:normal;
+}
+#link{
+    color:cyan;
+}
+#cheatsheet-list {
+    list-style-type:none;
+}
+#question {
+    width:400px;
+    font-weight:thin;
+}
+#answer-bg {
+    width:400px;
+}
+#answer-bg:active{
+    background-image:none;
+}
+#answer-bg:hover #answer-text {
+    visibility:visible;
+    background-color:black;
+}
+#answer-text {
+    content:"Reveal";
+    visibility:hidden;
+}
+#editor {
+    height:720px;
+    width:1280px;
+}
+#logo-table {
+    position:relative;
+    right:105px;
+    padding:0px;
+}
+#logo {
+    background-color:#2a2e2b;
+    border:5px solid #323438;
+    border-radius:10px;
+    padding:10px;
+    margin:0px;
+    font-weight:bolder;
+    font-size:24pt;
+    /*font-family: 'Source Code Pro';*/
+}
+/*#mdn {*/
+/*    background-image:url("https://i.imgur.com/bDoudAs.png");*/
+/*    background-size:575px 800px;*/
+/*    transition: background-size 2s;*/
+/*}*/
+/*#w3 {*/
+/*    background-image:url("https://i.imgur.com/vZLtaaQ.png");*/
+/*    background-size:575px 800px;*/
+/*    transition: background-size 2s;*/
+/*}*/
+.previews{
+    height:800px;
+    width:675px;
+    transition: height 2s, width 2s;
+    border:5px solid #323438;
+}
+/*.previews:hover{*/
+/*    height:637px;*/
+/*    width:1280px;*/
+/*}*/
+/*#mdn:hover{*/
+/*    background-image:url("https://i.imgur.com/ehP7xNf.png");*/
+/*    background-size:1280px 637px;*/
+/*}*/
+/*#w3:hover {*/
+/*    background-image:url("https://i.imgur.com/BThhu2u.png");*/
+/*    background-size:1280px 637px;*/
+/*}*/
